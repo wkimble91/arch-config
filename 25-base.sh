@@ -48,13 +48,6 @@ CreateLink /etc/os-release ../usr/lib/os-release
 # Local time zone
 CreateLink /etc/localtime /usr/share/zoneinfo/America/Chicago
 
-# Create password file
-CreateFile /etc/.pwd.lock 600 > /dev/null
-CopyFile /etc/group
-CopyFile /etc/gshadow
-CopyFile /etc/passwd
-DecryptFileTo /etc/shadow.gpg /etc/shadow
-
 # Specify locales
 f="$(GetPackageOriginalFile glibc /etc/locale.gen)"
 sed -i 's/^#\(en_US.UTF-8\)/\1/g' "$f"
