@@ -1,0 +1,41 @@
+AddPackage aconfmgr-git
+AddPackage android-sdk-platform-tools
+AddPackage anki
+AddPackage autofs
+AddPackage dualsensectl-git # Dualsense Controller drivers
+AddPackage feishin-appimage
+AddPackage ffmt-bin # FFXIV Modding Tool
+AddPackage freetube-bin
+AddPackage fsearch
+AddPackage gconf
+AddPackage google-chrome
+AddPackage heroic-games-launcher-bin
+AddPackage koala-bin
+AddPackage komodo-edit
+AddPackage lib32-ncurses5-compat-libs
+AddPackage mecab
+AddPackage mecab-ipadic
+AddPackage mons #Dual monitor support
+AddPackage mp3tag
+AddPackage openrgb
+AddPackage otf-takao
+AddPackage paru-bin
+AddPackage pocket-casts-linux-bin
+AddPackage popsicle
+AddPackage postman-bin
+AddPackage proton-ge-custom-bin
+AddPackage protontricks
+AddPackage protonvpn
+AddPackage protonvpn-cli
+AddPackage protonvpn-gui
+AddPackage python-proton-client
+AddPackage python-protonvpn-nm-lib
+AddPackage python-vdf
+AddPackage responsively
+AddPackage snapd
+AddPackage ventoy-bin
+AddPackage visual-studio-code-bin
+AddPackage xclicker
+AddPackage yay
+AddPackage youtube-dl
+AddPackage zpaq
