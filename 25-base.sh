@@ -67,9 +67,15 @@ EOF
 
 # Assign shells
 cat >>"$(GetPackageOriginalFile filesystem /etc/shells)" <<EOF
+/bin/sh
+/bin/bash
 /bin/zsh
 /usr/bin/zsh
 /usr/bin/git-shell
+/bin/rbash
+/usr/bin/rbash
+/usr/bin/bash
+/usr/bin/sh
 EOF
 
 cat >>"$(GetPackageOriginalFile filesystem /etc/hosts)" <<EOF
