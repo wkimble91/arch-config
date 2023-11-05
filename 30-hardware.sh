@@ -7,9 +7,15 @@ AddPackage bluez-plugins # bluez plugins
 AddPackage bluez-utils # Development and debugging utilities for the bluetooth protocol stack
 AddPackage cups # OpenPrinting CUPS - daemon package
 AddPackage cups-pdf # PDF printer for cups
+AddPackage faac # Freeware Advanced Audio Coder
+AddPackage hplip # Drivers for HP DeskJet, OfficeJet, Photosmart, Business Inkjet and some LaserJet
+AddPackage imwheel # Mouse wheel configuration tool for XFree86/Xorg
+AddPackage linuxconsole # Set of utilities for joysticks and serial devices
+AddPackage piper # GTK application to configure gaming mice
 AddPackage powertop # A tool to diagnose issues with power consumption and power management
 AddPackage pulseaudio-alsa # ALSA Configuration for PulseAudio
 AddPackage pulseaudio-bluetooth # Bluetooth support for PulseAudio
+AddPackage system-config-printer # A CUPS printer configuration tool and status applet
 AddPackage xboxdrv # Driver for xbox controller
 AddPackage xf86-video-amdgpu # Video drivers for AMD GPUs
 AddPackage xf86-video-nouveau # Video drivers for AMD GPUs
