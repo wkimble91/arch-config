@@ -13,11 +13,16 @@ AddPackage dosfstools # DOS filesystem utilities
 AddPackage encfs # Cryptographic filesystem
 AddPackage exfatprogs # exFAT filesystem userspace utilities for the Linux Kernel exfat driver
 AddPackage fakeroot # Tool for simulating superuser privileges
+AddPackage file # File type identification utility
+AddPackage findutils # GNU utilities to locate files
 AddPackage gdb # The GNU Debugger
 AddPackage git # the fast distributed version control system
 AddPackage gocryptfs # Cryptographic filesystem
 AddPackage inetutils # A collection of common network programs
 AddPackage lib32-vulkan-radeon # 32-bit Vulkan drivers for AMD
+AddPackage m4 # The GNU macro processor
+AddPackage mtools # A collection of utilities to access MS-DOS disks
+AddPackage mtpfs # A FUSE filesystem that supports reading and writing from any MTP device
 AddPackage nano # open-source cli-based text editor program
 AddPackage nfs-utils # NFS client and server
 AddPackage npm # A package manager for javascript
@@ -26,10 +31,12 @@ AddPackage openssh # ssh client
 AddPackage os-prober # GRUB prober for Windows installs
 AddPackage p7zip # Command-line file archiver with high compression ratio
 AddPackage patch # A utility to apply patch files to original sources
+AddPackage playerctl # Keyboard shortcuts
 AddPackage python-netifaces # Portable module to access network interface information in Python
 AddPackage python-pip # Official package installer for Python
 AddPackage python-pipx # Creates, for the user running it, an isolated environment for each application
 AddPackage rsync # A file transfer program to keep remote files in sync
+AddPackage seahouse # GNOME application for managing PGP keys
 AddPackage stow # Backing up and restoring dotfiles
 AddPackage sudo # Give certain users the ability to run some commands as root
 AddPackage unrar # The RAR uncompression program
@@ -51,6 +58,7 @@ CreateLink /etc/localtime /usr/share/zoneinfo/America/Chicago
 # Specify locales
 f="$(GetPackageOriginalFile glibc /etc/locale.gen)"
 sed -i 's/^#\(en_US.UTF-8\)/\1/g' "$f"
+sed -i 's/^#\(en_US ISO-8859-1\)/\1/g' "$f"
 
 cat >"$(CreateFile /etc/locale.conf)" <<EOF
 LANG=en_US.UTF-8
@@ -79,7 +87,6 @@ cat >>"$(GetPackageOriginalFile filesystem /etc/shells)" <<EOF
 EOF
 
 cat >>"$(GetPackageOriginalFile filesystem /etc/hosts)" <<EOF
-
 #<ip-address>   <hostname.domain.org>   <hostname>
 127.0.0.1       localhost.localdomain   localhost
 ::1             localhost.localdomain   localhost
