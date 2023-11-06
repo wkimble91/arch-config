@@ -1,4 +1,5 @@
 AddPackage aurutils # helper tools for the arch user repository
+AddPackage pacman # A library-based package manager with dependency support
 AddPackage pacman-contrib # Contributed scripts and tools for pacman systems
 AddPackage pacutils # Helper tools for libalpm
 AddPackage reflector # Script to retrieve and filter the latest Pacman mirror list.
