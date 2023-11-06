@@ -10,30 +10,3 @@ cat >"$(CreateFile /etc/systemd/journald.conf.d/00-journal-size.conf)" <<EOF
 [Journal]
 SystemMaxUse=50M
 EOF
-
-#cat >"$(CreateFile /etc/systemd/system/root-suspend.service)" <<EOF
-#[Unit]
-#Description=Local system suspend actions
-#Before=sleep.target
-#
-#[Service]
-#Type=simple
-#ExecStart=-/usr/bin/rmmod tpm_tis tpm_crb tpm_tis_core tpm
-#
-#[Install]
-#WantedBy=sleep.target
-#EOF
-
-#cat >"$(CreateFile /etc/systemd/system/root-resume.service)" <<EOF
-#[Unit]
-#Description=Local system resume actions
-#After=suspend.target
-#
-#[Service]
-#Type=oneshot
-#ExecStart=/usr/bin/modprobe tpm_crb
-#ExecStart=/usr/bin/modprobe tpm_tis
-#
-#[Install]
-#WantedBy=suspend.target
-#EOF
