@@ -1,4 +1,3 @@
-  GNU nano 7.2                                                                                                   70-apps.sh                                                                                                              
 AddPackage audacious # Simple music player
 AddPackage audacity # Sound editor
 AddPackage baka-mplayer
